@@ -37,7 +37,8 @@ public class ProductDetail {
         return productDetail;
     }
 
-    public void update(Long price) {
+    public void update(Product product, Long price) {
+        this.product = product;
         updatePrice(price);
     }
 

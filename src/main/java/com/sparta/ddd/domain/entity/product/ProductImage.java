@@ -24,6 +24,7 @@ public class ProductImage {
 
     public static ProductImage create(ProductDetail productDetail, String name, String url) {
         return ProductImage.builder()
+                .productDetail(productDetail)
                 .name(name)
                 .url(url)
                 .build();

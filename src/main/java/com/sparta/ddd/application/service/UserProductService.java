@@ -4,7 +4,7 @@ import com.sparta.ddd.domain.entity.product.Product;
 import com.sparta.ddd.domain.entity.user.User;
 import com.sparta.ddd.domain.repository.UserRepository;
 import com.sparta.ddd.domain.service.UserProductDomainService;
-import com.sparta.ddd.infrastructure.ProductRepository;
+import com.sparta.ddd.domain.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

@@ -6,7 +6,7 @@ import com.sparta.ddd.application.dtos.user.UserDto;
 import com.sparta.ddd.application.dtos.user.UserResponse;
 import com.sparta.ddd.domain.entity.user.User;
 import com.sparta.ddd.domain.repository.UserRepository;
-import com.sparta.ddd.infrastructure.ProductRepository;
+import com.sparta.ddd.domain.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
