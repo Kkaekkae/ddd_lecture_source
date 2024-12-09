@@ -42,6 +42,10 @@ public class ProductDetail {
         updatePrice(price);
     }
 
+    public void updateImage(ProductImage image) {
+        this.images.add(image);
+    }
+
     /***
      * TODO: DDD를 사용하면서 생기는 장점 (캡슐화)
      * ProductDetail 의 규칙을 가정함 - retailPrice 는 supplyPrice 의 1.2배로 한다.
@@ -49,7 +53,7 @@ public class ProductDetail {
      * 추후 비즈니스 규칙이 변경되어 1.2 배의 기준이 변경될 때 ProductDetail 의 updatePrice 메서드만 수정하면 된다.
      */
     private void updatePrice(Long price) {
-        this.retailPrice = Math.round(price * 1.2);
+        this.retailPrice = Math.round(price * 1.5);
         this.supplyPrice = price;
     }
 
