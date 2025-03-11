@@ -33,7 +33,7 @@ public class User {
                 .name(name)
                 .email(email)
                 .build();
-        //TODO: Static Method 로 구현한 규칙의 경우 builder 생성 이후 호출로 구현 가능합니다.
+        //TODO: Static Method 로 구현한 규칙의 경우 builder 생성 이후 호출로 연결이 가능합니다.
         user.transferPhoneNumberFormat(phoneNumber);
         return user;
     }
@@ -49,6 +49,7 @@ public class User {
         transferPhoneNumberFormat(phoneNumber);
     }
 
+    //TODO: 추후 핸드폰번호 저장 규칙이 '000-0000-0000' 에서 '0000000000' 으로 변경되어도 아래 메서드만 수정하면 서비스 전체에 반영됨
     private void transferPhoneNumberFormat(String phoneNumber) {
         this.phoneNumber = phoneNumber.replaceAll(PHONE_NUMBER_TRANSFER_TARGET, "");
     }
